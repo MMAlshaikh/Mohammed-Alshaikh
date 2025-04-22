@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Birthday Party Invitation</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #ffebf3;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .invitation {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border: 10px solid #ff66b3;
+        }
+        
+        h1 {
+            color: #ff3399;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: #ff66b3;
+            margin-top: 0;
+        }
+        
+        .date {
+            font-size: 1.5em;
+            color: #ff3399;
+            margin: 20px 0;
+        }
+        
+        .time {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .location {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #fff0f5;
+            border-radius: 10px;
+        }
+        
+        .details {
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        
+        .rsvp {
+            background-color: #ff66b3;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+        
+        .rsvp:hover {
+            background-color: #ff3399;
+        }
+        
+        .balloon {
+            width: 80px;
+            position: absolute;
+            animation: float 5s infinite ease-in-out;
+        }
+        
+        .balloon1 {
+            top: 50px;
+            left: 50px;
+            animation-delay: 0s;
+        }
+        
+        .balloon2 {
+            top: 80px;
+            right: 60px;
+            animation-delay: 1s;
+        }
+        
+        .balloon3 {
+            bottom: 100px;
+            left: 70px;
+            animation-delay: 2s;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .footer {
+            margin-top: 30px;
+            color: #ff66b3;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <img class="balloon balloon1" src="https://cdn.pixabay.com/photo/2014/04/03/00/41/balloons-309539_960_720.png" alt="Balloon">
+    <img class="balloon balloon2" src="https://cdn.pixabay.com/photo/2014/04/03/00/41/balloons-309539_960_720.png" alt="Balloon">
+    <img class="balloon balloon3" src="https://cdn.pixabay.com/photo/2014/04/03/00/41/balloons-309539_960_720.png" alt="Balloon">
+    
+    <div class="invitation">
+        <h1>You're Invited!</h1>
+        <h2>To Alex's 25th Birthday Party</h2>
+        
+        <div class="date">Saturday, June 10th</div>
+        
+        <div class="time">3:00 PM - 8:00 PM</div>
+        
+        <div class="location">
+            <p>📍 Sunny Gardens Park</p>
+            <p>123 Celebration Lane</p>
+            <p>Happytown, HT 12345</p>
+        </div>
+        
+        <div class="details">
+            <p>Join us for an afternoon of fun, food, and festivities!</p>
+            <p>We'll have BBQ, games, music, and a special surprise.</p>
+            <p>Dress code: Casual & colorful!</p>
+        </div>
+        
+        <a href="mailto:alex@example.com?subject=Birthday RSVP" class="rsvp">RSVP by June 1st</a>
+        
+        <div class="footer">
+            <p>Bring your swimsuit - pool access included!</p>
+            <p>Gifts appreciated but not required. Your presence is present enough!</p>
+        </div>
+    </div>
+</body>
+</html>
